@@ -1,0 +1,5 @@
+<div>Gender: {{person.gender | uppercase}}</div>
+<div>Birthday: {{person.birthday | date: 'yyyy-MM-dd HH:mm:ss'}}</div>
+<div>Assets: {{person.assets | currency: 'IDR':'symbol-narrow'}}</div>
+<div>Phone: {{person.phone | slice:0:3}}-{{person.phone | slice:3:6}}-{{person.phone | slice:6:10}}</div>
+<div>Limit: {{person.limit | percent:'2.2'}}</div>
